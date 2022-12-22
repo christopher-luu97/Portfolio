@@ -23,10 +23,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main
+        className="bg-white px-10 md:px-20 lg:px-40 
+      transition-colors duration-1000
+      dark:bg-gray-900"
+      >
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl ">Christopher Luu Portfolio</h1>
+            <h1 className="text-xl dark:text-white">
+              Christopher Luu Portfolio
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -49,35 +55,39 @@ export default function Home() {
               src="/chrluu high res-modified.png"
               width="250"
               height="250"
-              layoutFill={true}
+              layoutfill={true}
               wrapper="h-60  w-1/2 bg-red-100 relative flex justify-center"
             />
           </div>
           <section>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-              <AiFillGithub />
-              <AiFillLinkedin />
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+              <AiFillGithub href="#" className="hover:shadow-white" />
+              <AiFillLinkedin href="#" />
             </div>
           </section>
           <div className="text-center">
             <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl">
               Christopher Luu
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
+            <h3 className="text-2xl font-bold py-2 md:text-3xl dark:text-white">
               Engineer | Software Developer | Consultant
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
               Professional Engineer working as a Consultant within Data Science.
               I develop software leveraging AI to augment decision making for
               clients. Look below to see some of my projects!
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-3xl py-1">Skills & Experience</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <h3 className="text-3xl font-bold py-1 dark:text-white">
+              Skills & Experience
+            </h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Experience developing software applications and scripts for
               Government clients using Python, R, SQL Server, PowerBI, Docker
               and Google Cloud Platform (GCP). Extra certifications in AWS.
+              Passionate about coding including using JavaScript with NextJS and
+              TailWindCSS for this portfolio webpage.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800">
               <span className="text-teal-400">Python | </span>
@@ -94,23 +104,23 @@ export default function Home() {
               </span>
             </p>
           </div>
-          <div className="lg:flex gap-10 p-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="lg:flex items-stretch gap-10 p-10">
+            <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
               <AiFillCode className="text-5xl flex justify-center gap-16 py-3 text-cyan-800" />
-              <h3>Software Developement</h3>
+              <h3 className="font-bold">Software Developement</h3>
               <p className="py-2">Developing software to suit your needs.</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
               <AiFillRead className="text-5xl flex justify-center gap-16 py-3 text-cyan-700" />
-              <h3>Consulting</h3>
+              <h3 className="font-bold">Consulting</h3>
               <p className="py-2">
                 Tailoring bespoke solutions and strategies for your wicked
                 problems
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
               <AiFillLayout className="text-5xl flex justify-center gap-16 py-3 text-cyan-600" />
-              <h3>Solution Architecture</h3>
+              <h3 className="font-bold">Systems Design</h3>
               <p className="py-2">
                 Designing robust systems to take proof-of-concepts to MVP
               </p>
