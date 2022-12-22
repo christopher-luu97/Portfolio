@@ -42,7 +42,9 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-4 py-2 rounded-md ml-8"
+                  className="flex space-x-3 mr-2 font-semibold bg-gradient-to-r from-sky-500 to-indigo-500
+                   text-white px-4 py-2 rounded-md ml-8 ring-2 ring-sky-600
+                hover:ring-slate-300 mx-8 shadow-lg shadow-indigo-500/50"
                   href="#"
                 >
                   Resume
@@ -61,8 +63,12 @@ export default function Home() {
           </div>
           <section>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-              <AiFillGithub href="#" className="hover:shadow-white" />
-              <AiFillLinkedin href="#" />
+              <a href="https://github.com/christopher-luu97">
+                <AiFillGithub className="cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com/in/christopher-luu-542691149/">
+                <AiFillLinkedin className="cursor-pointer" />
+              </a>
             </div>
           </section>
           <div className="text-center">
