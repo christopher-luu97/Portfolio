@@ -1,0 +1,34 @@
+Portoflio projects:
+
+1. Transciber GUI
+    - Using OpenAI Whisper, Silero-VAD
+        - Code adapted all for local usage and then packaged to exe 
+        - See https://colab.research.google.com/github/ANonEntity/WhisperWithVAD/blob/main/WhisperWithVAD.ipynb#scrollTo=sos9vsxPkIN7
+            - This is original code that is the backbone
+            - I this as needed along with editing original Whisper and Silero-Vad Code to meet needs for an executable
+    - Developed the GUI with custom styling and error handling mechanisms 
+    - Provided input data as well as corrupted data for showcase
+    - Includes to text and to csv options for transcriptions 
+    - This is what I built for work but has been adapted for public usage and edited as such
+
+2. Website using NextJS and TailWindCSS 
+    - Adapted from tutorial by "Developedbyed" from https://www.youtube.com/watch?v=k-Pi5ZMxHWY&ab_channel=developedbyed
+        - Used his tutorial for basic setup, explored and added more features through 
+            reading TailWind documentation as well as googling for what I wanted for my website 
+
+3. Streamlit WebApp Audio Classifier 
+    - Followed a paper to implement a proof-of-concept 
+    - Built CNN with Keras (TF) following paper 
+    - Hyperparameter tuning as needed to get appropriate loss curves 
+    - Created front-end for client to play with, key requirement "I want to see code"
+        - Client could press buttons and the code would pop up
+    - Exposed streamlit application on GCP (Chose GCP opposed to others as per project needs and alliance)
+    - Used Google Cloud Storage for Data 
+    - Used Docker and Google Kubernetes Engine to push code configurations to cloud
+    - Exposed to an endpoint and wrapped endpoint in a QR scanner for easy access 
+    - Result of POC was the winning of the bid where we have proceeded from Phase0 (2021-2021) to Phase 2(2022-2023)
+
+4. Speech Analytics Dashboard with Dash (TODO)
+    - Building a dashboard leveraging outputs from transcriber GUI 
+    - This dashboard is for transcribed league of legends worlds commentary 
+    - Can be adapated to other esport gaming commentaries 
