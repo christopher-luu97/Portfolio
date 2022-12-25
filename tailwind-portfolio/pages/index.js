@@ -63,10 +63,18 @@ export default function Home() {
           </div>
           <section>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-              <a href="https://github.com/christopher-luu97">
+              <a
+                target="_blank"
+                href="https://github.com/christopher-luu97"
+                rel="noopener noreferrer"
+              >
                 <AiFillGithub className="cursor-pointer" />
               </a>
-              <a href="https://www.linkedin.com/in/christopher-luu-542691149/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/christopher-luu-542691149/"
+                rel="noopener noreferrer"
+              >
                 <AiFillLinkedin className="cursor-pointer" />
               </a>
             </div>
