@@ -33,9 +33,19 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex items-center justify-between">
             <Link href="/">
-              <h1 className="text-xl dark:text-white">
-                Christopher Luu Portfolio
-              </h1>
+              <span className="text-xl dark:text-white flex items-center">
+                {"CHRISTOPHER".split("").map((letter, index) => {
+                  return (
+                    <span
+                      key={index}
+                      className="hover:text-sky-600 hover:-mt-2 
+                            transition-all duration-500 hover:duration-100"
+                    >
+                      {letter}
+                    </span>
+                  );
+                })}
+              </span>
             </Link>
             <ul className="flex items-center">
               <li>
