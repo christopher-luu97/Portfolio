@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Link from "next/link";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -29,10 +31,12 @@ export default function Home() {
       dark:bg-gray-900"
       >
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-white">
-              Christopher Luu Portfolio
-            </h1>
+          <nav className="py-10 mb-12 flex items-center justify-between">
+            <Link href="/">
+              <h1 className="text-xl dark:text-white">
+                Christopher Luu Portfolio
+              </h1>
+            </Link>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -91,8 +95,20 @@ export default function Home() {
               I develop software leveraging AI to augment decision making for
               clients. Look below to see some of my projects!
             </p>
+            <ScrollLink
+              activeClass="active"
+              to="skillsExperience"
+              spy={true}
+              offset={-30}
+              smooth={true}
+              duration={500}
+            >
+              <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white hover:border-fun-pink transition-colors">
+                Tell me more
+              </div>
+            </ScrollLink>
           </div>
-          <div className="text-center">
+          <div id="skillsExperience" className="text-center">
             <h3 className="text-3xl font-bold py-1 dark:text-white">
               Skills & Experience
             </h3>
