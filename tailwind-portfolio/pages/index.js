@@ -6,6 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Link from "next/link";
+import { ScrollToTop } from "../hooks/ScrollToTop";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -137,7 +138,7 @@ export default function Home() {
               smooth={true}
               duration={500}
             >
-              <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white hover:border-fun-pink transition-colors">
+              <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white">
                 Tell me more
               </div>
             </ScrollLink>
@@ -204,6 +205,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ScrollToTop />
       </main>
     </div>
   );
