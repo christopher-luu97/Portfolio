@@ -7,6 +7,7 @@ import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Link from "next/link";
 import { ScrollToTop } from "../hooks/ScrollToTop";
+import Skills from "../components/skills";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -154,6 +155,7 @@ export default function Home() {
               Passionate about coding including using JavaScript with NextJS and
               TailWindCSS for this portfolio webpage.
             </p>
+            <Skills />
             <p className="text-md py-2 leading-8 text-gray-800">
               <span className="text-teal-400">Python | </span>
               <span className="text-teal-500">R | </span>
