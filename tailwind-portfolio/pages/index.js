@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div
-        className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-padding overflow-hidden md:overflow-visible"
-        style={{ maxWidth: "1200px" }}
+        className="w-full m-auto flex flex-col items-center justify-center min-h-screen"
+        style={{ maxWidth: "1400px" }}
       >
         <Head>
           <title>Christopher Luu Portfolio</title>
@@ -37,7 +37,7 @@ export default function Home() {
         <main
           className="bg-white px-10 md:px-20 lg:px-40 
       transition-colors duration-1000
-      dark:bg-gray-900"
+      dark:bg-gray-900 "
         >
           <section className="min-h-screen">
             <Navbar currentPage="Home" />
