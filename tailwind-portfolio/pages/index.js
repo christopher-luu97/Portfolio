@@ -151,25 +151,12 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Experience developing software applications and scripts for
               Government clients using Python, R, SQL Server, PowerBI, Docker
-              and Google Cloud Platform (GCP). Extra certifications in AWS.
+              and Google Cloud Platform (GCP). Extra certifications in AWS with
+              the AWS Cloud Practitioner and AWS Machine Learning Specialty.
               Passionate about coding including using JavaScript with NextJS and
               TailWindCSS for this portfolio webpage.
             </p>
             <Skills />
-            <p className="text-md py-2 leading-8 text-gray-800">
-              <span className="text-teal-400">Python | </span>
-              <span className="text-teal-500">R | </span>
-              <span className="text-teal-600">SQL Server | </span>
-              <span className="text-teal-700">PowerBI | </span>
-              <span className="text-teal-800">JavaScript | </span>
-              <span className="text-teal-900">GCP | </span>
-            </p>
-            <p>
-              <span className="text-orange-400">AWS Cloud Practitioner | </span>
-              <span className="text-orange-500">
-                AWS Machine Learning Specialty |{" "}
-              </span>
-            </p>
           </div>
           <div className="lg:flex items-stretch gap-10 p-10">
             <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
