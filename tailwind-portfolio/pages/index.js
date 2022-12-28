@@ -10,6 +10,7 @@ import { ScrollToTop } from "../hooks/ScrollToTop";
 import Skills from "../components/skills";
 import { Navbar } from "../components/navbar";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Projects from "../components/projects";
 
 import {
   AiFillGithub,
@@ -133,14 +134,7 @@ export default function Home() {
           <section>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <h3 className="text-3x py-1">Portfolio</h3>
-              <div className="basis-1/3 flex-1">
-                <AiFillAndroid
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div>
+              <Projects />
             </div>
           </section>
           <ScrollToTop />
