@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React from "react";
 import { routes } from "../data/global";
-import { useState } from "react";
 
 export function Navbar({ currentPage }) {
   return (

@@ -29,7 +29,7 @@ const Projects = () => {
           <ProjectItem
             title="Personal Portfolio"
             backgroundImg={pepeImg} /** Edit image */
-            projectUrl="/home"
+            projectUrl="/"
             tech="NextJS and TailWindCSS"
           />
           <ProjectItem
