@@ -1,3 +1,4 @@
+/** From: https://braydentw.io/ */
 import React from "react";
 import { skills } from "../content/home";
 
