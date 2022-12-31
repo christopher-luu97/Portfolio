@@ -101,6 +101,8 @@ export default function Home() {
                   </div>
                 </ScrollLink>
               </div>
+            </section>
+            <section>
               <div id="skillsExperience" className="text-center">
                 <h3 className="text-3xl font-bold py-1 dark:text-white">
                   Skills & Experience
