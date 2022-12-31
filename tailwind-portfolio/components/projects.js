@@ -3,20 +3,31 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import pepeImg from "../public/assets/projects/pepe.jpg";
+import transriberImg from "../public/assets/projects/transcriber.PNG";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Projects
-        </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+      <div className="max-w-[1240px] mx-auto px-2 py-16 text-center">
+        <span className="text-3xl flex items-center white-space:pre-wrap tracking-widest uppercase text-gray-800 dark:text-white">
+          {"PROJECTS".split("").map((letter, index) => {
+            return (
+              <span
+                key={index}
+                className="hover:text-sky-600 hover:-mt-2 
+                            transition-all duration-500 hover:duration-100"
+              >
+                {letter}
+              </span>
+            );
+          })}
+        </span>
+        <br />
+        <div className="grid md:grid-cols-2 gap-8 ">
           <ProjectItem
             title="Transcriber App"
-            backgroundImg={pepeImg} /** Edit image */
+            backgroundImg={transriberImg} /** Edit image */
             projectUrl="/transcriber"
             tech="Python and PyQT"
           />

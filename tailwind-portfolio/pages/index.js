@@ -48,7 +48,7 @@ export default function Home() {
                   src="/chrluu high res-modified.png"
                   width="250"
                   height="250"
-                  layoutfill={true}
+                  layoutfill="true"
                   wrapper="h-60  w-1/2 bg-red-100 relative flex justify-center"
                 />
               </div>
