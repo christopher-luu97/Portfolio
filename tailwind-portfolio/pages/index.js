@@ -111,24 +111,24 @@ export default function Home() {
                 <Skills />
               </div>
               <div className="lg:flex items-stretch gap-10 p-10">
-                <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillCode className="text-5xl flex justify-center gap-16 py-3 text-cyan-800" />
-                  <h3 className="font-bold">Software Developement</h3>
+                <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
+                  <AiFillCode className="text-5xl flex justify-center text-cyan-600" />
+                  <h3 className="font-bold py-1">Software Developement</h3>
                   <p className="py-2">
                     Developing software to suit your needs.
                   </p>
                 </div>
                 <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillRead className="text-5xl flex justify-center gap-16 py-3 text-cyan-700" />
-                  <h3 className="font-bold">Consulting</h3>
+                  <AiFillRead className="text-5xl flex justify-center text-cyan-600" />
+                  <h3 className="font-bold py-1">Consulting</h3>
                   <p className="py-2">
                     Tailoring bespoke solutions and strategies for your wicked
                     problems
                   </p>
                 </div>
                 <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillLayout className="text-5xl flex justify-center gap-16 py-3 text-cyan-600" />
-                  <h3 className="font-bold">Systems Design</h3>
+                  <AiFillLayout className="text-5xl flex justify-center text-cyan-600" />
+                  <h3 className="font-bold py-1">Systems Design</h3>
                   <p className="py-2">
                     Designing robust systems to take proof-of-concepts to MVP
                   </p>
