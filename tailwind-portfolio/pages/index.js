@@ -76,7 +76,7 @@ export default function Home() {
                   </a>
                 </div>
               </section>
-              <div className="text-center">
+              <div className="relative w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
                 <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl">
                   Christopher Luu
                 </h2>
