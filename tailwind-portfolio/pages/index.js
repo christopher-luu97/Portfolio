@@ -110,13 +110,32 @@ export default function Home() {
                 <br />
                 <Skills />
               </div>
-              <div className="lg:flex items-stretch gap-10 p-10">
-                <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillCode className="text-5xl flex justify-center text-cyan-600" />
-                  <h3 className="font-bold py-1">Software Developement</h3>
-                  <p className="py-2">
-                    Developing software to suit your needs.
-                  </p>
+              <div
+                class="cards__"
+                className="lg:flex items-stretch gap-10 p-10"
+              >
+                <div
+                  class="card__content_1"
+                  className="shadow-cyan-800/40
+                  relative preserve-3d hover:my-rotate-y-180 
+                  transform transition-all duration-1000
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  hover:shadow-cyan-700 
+                dark:bg-white"
+                >
+                  <div class="card__front" className="backface-hidden">
+                    <AiFillCode className="text-5xl text-cyan-600 " />
+                    <h3 className="font-bold py-1">Software Developement</h3>
+                    <p className="py-2">
+                      Developing software to suit your needs.
+                    </p>
+                  </div>
+                  <div
+                    class="card__back"
+                    className="my-rotate-y-180 backface-hidden"
+                  >
+                    <p className="py-2">ye</p>
+                  </div>
                 </div>
                 <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
                   <AiFillRead className="text-5xl flex justify-center text-cyan-600" />
