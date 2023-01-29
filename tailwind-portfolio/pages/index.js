@@ -122,19 +122,23 @@ export default function Home() {
                   hover:shadow-cyan-700 
                 dark:bg-white"
                 >
-                  <div className="backface-hidden">
+                  <div className="backface-hidden h-48">
                     <Image
-                      class="h-full w-full rounded-xl object-cover shadow-xl"
+                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-sky-600 "
                       src={codingImg}
                       alt="/"
                     />
                   </div>
-                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <AiFillCode className="text-5xl text-cyan-600 " />
-                    <h3 className="font-bold py-1">Software Developement</h3>
-                    <p className="py-2">
-                      Developing software to suit your needs.
-                    </p>
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
+                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-sky-600">
+                      <AiFillCode className="h-16 w-full text-5xl text-cyan-600 " />
+                      <h3 className="pt-4 font-bold py-1">
+                        Software Developement
+                      </h3>
+                      <p className="pt-2 py-2">
+                        Developing applications to suit your needs.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -145,20 +149,21 @@ export default function Home() {
                   hover:shadow-cyan-700 
                 dark:bg-white"
                 >
-                  <div className="backface-hidden">
+                  <div className="h-48 backface-hidden">
                     <Image
-                      class="h-full w-full rounded-xl object-cover shadow-xl"
+                      class="h-full w-full rounded-xl object-cover shadow-md shadow-sky-700"
                       src={consultingImg}
                       alt="/"
                     />
                   </div>
-                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <AiFillRead className="text-5xl flex justify-center text-cyan-600" />
-                    <h3 className="font-bold py-1">Consulting</h3>
-                    <p className="py-2">
-                      Tailoring bespoke solutions and strategies for your wicked
-                      problems
-                    </p>
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
+                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-sky-700">
+                      <AiFillRead className="h-16 w-full text-5xl flex justify-center text-cyan-600" />
+                      <h3 className="pt-4 font-bold py-1">Consulting</h3>
+                      <p className="pt-2 py-2">
+                        Tailoring bespoke solutions and strategies.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -169,19 +174,21 @@ export default function Home() {
                   hover:shadow-cyan-700 
                 dark:bg-white"
                 >
-                  <div className="backface-hidden">
+                  <div className="h-48 backface-hidden">
                     <Image
-                      class="h-full w-full rounded-xl object-cover shadow-xl"
+                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-cyan-700"
                       src={systemsImg}
                       alt="/"
                     />
                   </div>
-                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <AiFillLayout className="text-5xl flex justify-center text-cyan-600" />
-                    <h3 className="font-bold py-1">Systems Design</h3>
-                    <p className="py-2">
-                      Designing robust systems to take proof-of-concepts to MVP
-                    </p>
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
+                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-cyan-700">
+                      <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-cyan-600" />
+                      <h3 className="pt-4 font-bold py-1">Systems Design</h3>
+                      <p className="pt-2 py-2">
+                        Designing robust systems from ideation to production
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
