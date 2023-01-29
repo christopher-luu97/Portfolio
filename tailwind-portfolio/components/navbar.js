@@ -5,7 +5,7 @@ import { routes } from "../data/global";
 
 export function Navbar({ currentPage }) {
   return (
-    <nav className="py-10 mb-12 flex items-center justify-between">
+    <nav className="py-10 mb-0 flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="text-xl white-space:pre-wrap dark:text-white flex items-center">

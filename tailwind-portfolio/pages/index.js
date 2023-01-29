@@ -57,12 +57,15 @@ export default function Home() {
               </div>
               <section>
                 <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-                  <a>
-                    <BsFillMoonStarsFill
-                      onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-4xl dark:text-white"
-                    />
-                  </a>
+                  <div className="pt-2">
+                    <a>
+                      <BsFillMoonStarsFill
+                        onClick={() => setDarkMode(!darkMode)}
+                        className="cursor-pointer text-4xl dark:text-white"
+                      />
+                    </a>
+                  </div>
+
                   <a
                     target="_blank"
                     href="https://github.com/christopher-luu97"
@@ -78,32 +81,33 @@ export default function Home() {
                     <AiFillLinkedin className="cursor-pointer" />
                   </a>
                 </div>
+                <div className="relative w-full pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
+                  <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl">
+                    Christopher Luu
+                  </h2>
+                  <h3 className="text-2xl font-bold py-2 md:text-3xl dark:text-white">
+                    Engineer | Software Developer | Consultant
+                  </h3>
+                  <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
+                    Professional Engineer working as a Consultant within Data
+                    Science. I develop software leveraging AI to augment
+                    decision making and enhance efficiency for clients. Look
+                    below to see my skills and projects!
+                  </p>
+                  <ScrollLink
+                    activeClass="active"
+                    to="skillsExperience"
+                    spy={true}
+                    offset={-30}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white">
+                      Tell me more
+                    </div>
+                  </ScrollLink>
+                </div>
               </section>
-              <div className="relative w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
-                <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl">
-                  Christopher Luu
-                </h2>
-                <h3 className="text-2xl font-bold py-2 md:text-3xl dark:text-white">
-                  Engineer | Software Developer | Consultant
-                </h3>
-                <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white">
-                  Professional Engineer working as a Consultant within Data
-                  Science. I develop software leveraging AI to augment decision
-                  making for clients. Look below to see some of my projects!
-                </p>
-                <ScrollLink
-                  activeClass="active"
-                  to="skillsExperience"
-                  spy={true}
-                  offset={-30}
-                  smooth={true}
-                  duration={500}
-                >
-                  <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white">
-                    Tell me more
-                  </div>
-                </ScrollLink>
-              </div>
             </section>
             <section>
               <div id="skillsExperience" className="text-center">
