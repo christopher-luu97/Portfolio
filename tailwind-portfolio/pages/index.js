@@ -11,7 +11,9 @@ import Skills from "../components/skills";
 import { Navbar } from "../components/navbar";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Projects from "../components/projects";
-import pepeImg from "../public/assets/projects/pepe.jpg";
+import consultingImg from "../public/assets/skills/consulting.jpg";
+import systemsImg from "../public/assets/skills/systems_design.jpg";
+import codingImg from "../public/assets/skills/coding.jpg";
 
 import {
   AiFillGithub,
@@ -113,7 +115,6 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start">
                 <div
-                  class="card__content_1"
                   className="shadow-cyan-800/40
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
@@ -121,38 +122,67 @@ export default function Home() {
                   hover:shadow-cyan-700 
                 dark:bg-white"
                 >
-                  <div class="card__front" className="backface-hidden">
+                  <div className="backface-hidden">
                     <Image
                       class="h-full w-full rounded-xl object-cover shadow-xl"
-                      src={pepeImg}
+                      src={codingImg}
                       alt="/"
                     />
                   </div>
-                  <div
-                    class="card__back"
-                    className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center"
-                  >
+                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
                     <AiFillCode className="text-5xl text-cyan-600 " />
                     <h3 className="font-bold py-1">Software Developement</h3>
                     <p className="py-2">
                       Developing software to suit your needs.
-                    </p>{" "}
+                    </p>
                   </div>
                 </div>
-                <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillRead className="text-5xl flex justify-center text-cyan-600" />
-                  <h3 className="font-bold py-1">Consulting</h3>
-                  <p className="py-2">
-                    Tailoring bespoke solutions and strategies for your wicked
-                    problems
-                  </p>
+                <div
+                  className="shadow-cyan-800/40
+                  relative preserve-3d hover:my-rotate-y-180 
+                  transform transition-all duration-1000
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  hover:shadow-cyan-700 
+                dark:bg-white"
+                >
+                  <div className="backface-hidden">
+                    <Image
+                      class="h-full w-full rounded-xl object-cover shadow-xl"
+                      src={consultingImg}
+                      alt="/"
+                    />
+                  </div>
+                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
+                    <AiFillRead className="text-5xl flex justify-center text-cyan-600" />
+                    <h3 className="font-bold py-1">Consulting</h3>
+                    <p className="py-2">
+                      Tailoring bespoke solutions and strategies for your wicked
+                      problems
+                    </p>
+                  </div>
                 </div>
-                <div className="transform transition duration-500 hover:scale-105 hover:shadow-cyan-700 shadow-cyan-800/40 flex-1 text-center shadow-lg p-5 rounded-xl my-10 dark:bg-white">
-                  <AiFillLayout className="text-5xl flex justify-center text-cyan-600" />
-                  <h3 className="font-bold py-1">Systems Design</h3>
-                  <p className="py-2">
-                    Designing robust systems to take proof-of-concepts to MVP
-                  </p>
+                <div
+                  className="shadow-cyan-800/40
+                  relative preserve-3d hover:my-rotate-y-180 
+                  transform transition-all duration-1000
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  hover:shadow-cyan-700 
+                dark:bg-white"
+                >
+                  <div className="backface-hidden">
+                    <Image
+                      class="h-full w-full rounded-xl object-cover shadow-xl"
+                      src={systemsImg}
+                      alt="/"
+                    />
+                  </div>
+                  <div className="my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
+                    <AiFillLayout className="text-5xl flex justify-center text-cyan-600" />
+                    <h3 className="font-bold py-1">Systems Design</h3>
+                    <p className="py-2">
+                      Designing robust systems to take proof-of-concepts to MVP
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>
