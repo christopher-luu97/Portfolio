@@ -5,7 +5,7 @@ import { routes } from "../data/global";
 
 export function Navbar({ currentPage }) {
   return (
-    <nav className="py-10 mb-0 flex items-center justify-between">
+    <nav className="py-10 flex justify-between items-center">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="text-xl white-space:pre-wrap dark:text-white flex items-center">
@@ -48,15 +48,15 @@ export function Navbar({ currentPage }) {
         </Link>
       </li>
       <ul
-        className="flex space-x-3 mr-2 font-semibold bg-gradient-to-r from-sky-500 to-indigo-500
-                   text-white px-4 py-2 rounded-md ml-8 ring-2 ring-sky-600
-                hover:ring-slate-300 mx-8 shadow-lg shadow-indigo-500/50"
+        className="flex space-x-3 mr-2 font-semibold
+                   text-white px-4 py-2 rounded-md ml-8"
       >
         {routes.map((item, index) => {
           return (
             <li
               key={index}
-              className={`list-none text-white ${
+              className={`list-none hover:bg-sky-700 text-gray-800 dark:text-white font-theme_bold py-1 pb-2
+              rounded-md transition-all sm:px-2 sm:py-2 lg:text-sm" ${
                 currentPage === item.title
                   ? "opacity-100"
                   : "opacity-40 hover:opacity-100 transition-opacity"
