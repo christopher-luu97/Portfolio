@@ -136,7 +136,7 @@ export default function Home() {
                 >
                   <div className="backface-hidden h-48 bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
                       src={codingImg}
                       alt="/"
                     />
@@ -163,7 +163,7 @@ export default function Home() {
                 >
                   <div className="h-48 backface-hidden bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-cover shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-xl object-cover shadow-md shadow-[#75809C]"
                       src={consultingImg}
                       alt="/"
                     />
@@ -190,7 +190,7 @@ export default function Home() {
                 >
                   <div className="h-48 backface-hidden bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
                       src={systemsImg}
                       alt="/"
                     />
@@ -216,55 +216,53 @@ export default function Home() {
             </section>
             <ScrollToTop />
           </main>
-          <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
-            <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
-              <p className="flex flex-col items-center justify-center ">
-                <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
-                  Made with{" "}
-                  <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
-                    <span>
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                        width="26"
-                        title="React"
-                      />
-                      <span className="sr-only">React</span>
-                    </span>
-                    <span>
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                        width="40"
-                        className="invert"
-                        title="NextJS"
-                      />
-                      <span className="sr-only">NextJS</span>
-                    </span>
-                    <span>
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                        width="26"
-                        title="TailwindCSS"
-                      />
-                      <span className="sr-only">TailwindCSS</span>
-                    </span>
-                  </div>
+          <footer className="flex flex-col w-screen px-5 py-10 border-t z-5 bg-bg">
+            <div
+              className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-gray-500 border-t
+            flex flex-col items-center justify-center "
+            >
+              <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
+                Made with{" "}
+                <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
+                  <span>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      width="26"
+                      title="React"
+                    />
+                    <span className="sr-only">React</span>
+                  </span>
+                  <span>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
+                      width="40"
+                      className="invert"
+                      title="NextJS"
+                    />
+                    <span className="sr-only">NextJS</span>
+                  </span>
+                  <span>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                      width="26"
+                      title="TailwindCSS"
+                    />
+                    <span className="sr-only">TailwindCSS</span>
+                  </span>
                 </div>
-                <div className="mt-2 text-xs ">
-                  Made by{" "}
-                  <a
-                    href="mailto:contact@braydentw.io"
-                    className="text-fun-gray-light font-medium"
-                  >
-                    Christopher Luu
-                  </a>
-                  . All rights reserved.
-                </div>
-              </p>
+              </div>
+              <div className="mt-2 text-xs ">
+                Made by{" "}
+                <span className="text-fun-gray-light font-medium">
+                  Christopher Luu.
+                </span>{" "}
+                All rights reserved.
+              </div>
             </div>
             <div className="mt-8 text-center sm:text-right sm:-mt-12">
               <a
-                className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-fun-pink px-4 py-2 rounded-xl text-fun-pink cursor-pointer opacity-50"
-                href="https://github.com/christopher-luu97/Portfolio/tree/master/tailwind-portfolio"
+                className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50"
+                href="https://github.com/christopher-luu97/Portfolio"
                 target="_blank"
                 rel="noopener nooreferrer"
               >
