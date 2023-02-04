@@ -46,7 +46,7 @@ export default function Home() {
           <main className="px-10 md:px-20 lg:px-40">
             <section className="min-h-screen">
               <Navbar currentPage="Home" />
-              <div className="flex flex-col items-center sm:justify-center sm:flex-row text-justify relative">
+              <div className="flex flex-col items-center sm:justify-center sm:flex-row text-justify relative ">
                 <Image
                   src="/chrluu high res-modified.png"
                   width="250"
