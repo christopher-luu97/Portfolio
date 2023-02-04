@@ -16,7 +16,7 @@ const Projects = () => {
               <span
                 key={index}
                 className="hover:text-sky-600 hover:-mt-2 
-                            transition-all duration-500 hover:duration-100"
+                            transition-all duration-500 hover:duration-300"
               >
                 {letter}
               </span>

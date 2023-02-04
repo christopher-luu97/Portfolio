@@ -55,7 +55,7 @@ export function Navbar({ currentPage }) {
           return (
             <li
               key={index}
-              className={`list-none hover:bg-sky-700 text-gray-800 dark:text-white font-theme_bold py-1 pb-2
+              className={`list-none hover:bg-[#818C98] text-gray-800 dark:text-white font-theme_bold py-1 pb-2
               rounded-md transition-all sm:px-2 sm:py-2 lg:text-sm" ${
                 currentPage === item.title
                   ? "opacity-100"

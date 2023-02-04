@@ -29,7 +29,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-white transition-colors duration-1000 dark:bg-gray-900 ">
+      <div className="bg-[#DCDDDF] transition-colors duration-1000 dark:bg-[#2A4C65] ">
         <div
           className="w-full m-auto flex flex-col items-center justify-center min-h-screen"
           style={{ maxWidth: "1400px" }}
@@ -82,7 +82,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="relative w-full pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
-                  <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl">
+                  <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl dark:text-[#B3CAD8]">
                     Christopher Luu
                   </h2>
                   <h3 className="text-2xl font-bold py-2 md:text-3xl dark:text-white">
@@ -102,7 +102,11 @@ export default function Home() {
                     smooth={true}
                     duration={500}
                   >
-                    <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-xl rounded-full border-fun-white text-gray-500 hover:text-black dark:hover:text-white">
+                    <div
+                      className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 
+                    text-xl rounded-full border-gray-500 text-gray-500
+                     hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white"
+                    >
                       Tell me more
                     </div>
                   </ScrollLink>
@@ -111,85 +115,93 @@ export default function Home() {
             </section>
             <section>
               <div id="skillsExperience" className="text-center">
-                <h3 className="text-3xl font-bold py-1 dark:text-white">
-                  Skills & Experience
-                </h3>
-                <br />
-                <Skills />
+                <div className="shadow-lg rounded-xl pb-10 shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
+                  <div className="px-10">
+                    <h3 className="text-3xl font-bold pt-5 dark:text-white">
+                      Skills & Experience
+                    </h3>
+                    <br />
+                    <Skills />
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start">
                 <div
-                  className="shadow-cyan-800/40
+                  className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
                   flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
-                  hover:shadow-cyan-700 
-                dark:bg-white"
+                  hover:shadow-[#75809C] bg-[#F2EEED]
+                  dark:bg-[#37668a]"
                 >
-                  <div className="backface-hidden h-48">
+                  <div className="backface-hidden h-48 bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-sky-600 "
+                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
                       src={codingImg}
                       alt="/"
                     />
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-sky-600">
-                      <AiFillCode className="h-16 w-full text-5xl text-cyan-600 " />
-                      <h3 className="pt-4 font-bold py-1">
+                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                      <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
+                      <h3 className="pt-2 font-bold py-1 dark:text-white">
                         Software Developement
                       </h3>
-                      <p className="pt-2 py-2">
+                      <p className="pt-1 py-2 dark:text-white">
                         Developing applications to suit your needs.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="shadow-cyan-800/40
+                  className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
                   flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
-                  hover:shadow-cyan-700 
-                dark:bg-white"
+                  hover:shadow-[#75809C] bg-[#F2EEED]
+                  dark:bg-[#37668a]"
                 >
-                  <div className="h-48 backface-hidden">
+                  <div className="h-48 backface-hidden bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-cover shadow-md shadow-sky-700"
+                      class="h-full w-full rounded-xl object-cover shadow-md shadow-[#75809C]"
                       src={consultingImg}
                       alt="/"
                     />
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-sky-700">
-                      <AiFillRead className="h-16 w-full text-5xl flex justify-center text-cyan-600" />
-                      <h3 className="pt-4 font-bold py-1">Consulting</h3>
-                      <p className="pt-2 py-2">
+                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                      <AiFillRead className="h-16 w-full text-5xl pt-2 flex justify-center text-[#2A4C65] dark:text-white" />
+                      <h3 className="pt-2 font-bold py-1 dark:text-white">
+                        Consulting
+                      </h3>
+                      <p className="pt-1 py-2 dark:text-white">
                         Tailoring bespoke solutions and strategies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
-                  className="shadow-cyan-800/40
+                  className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
                   flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
-                  hover:shadow-cyan-700 
-                dark:bg-white"
+                  hover:shadow-[#75809C] bg-[#F2EEED]
+                  dark:bg-[#37668a]"
                 >
-                  <div className="h-48 backface-hidden">
+                  <div className="h-48 backface-hidden bg-white rounded-xl">
                     <Image
-                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-cyan-700"
+                      class="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
                       src={systemsImg}
                       alt="/"
                     />
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-cyan-600 shadow-md shadow-cyan-700">
-                      <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-cyan-600" />
-                      <h3 className="pt-4 font-bold py-1">Systems Design</h3>
-                      <p className="pt-2 py-2">
+                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                      <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-[#2A4C65] dark:text-white" />
+                      <h3 className="pt-2 font-bold py-1 dark:text-white">
+                        Systems Design
+                      </h3>
+                      <p className="pt-1 py-2 dark:text-white">
                         Designing robust systems from ideation to production
                       </p>
                     </div>
