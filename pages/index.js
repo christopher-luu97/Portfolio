@@ -50,6 +50,7 @@ export default function Home() {
               <div className="flex flex-col items-center sm:justify-center sm:flex-row text-justify relative ">
                 <Image
                   src="/chrluu high res-modified.png"
+                  alt="/"
                   width="250"
                   height="250"
                   layoutfill="true"
@@ -139,14 +140,16 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
-                    <div className="rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
-                      <h3 className="pt-2 font-bold py-1 dark:text-white">
-                        Software Developement
-                      </h3>
-                      <p className="pt-1 py-2 dark:text-white">
-                        Developing applications to suit your needs.
-                      </p>
+                    <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                      <div className="pt-5 px-5">
+                        <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
+                        <h3 className="pt-2 font-bold py-1 dark:text-white">
+                          Software Developement
+                        </h3>
+                        <p className="pt-1 py-2 dark:text-white">
+                          Developing applications to suit your needs.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -166,14 +169,16 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-8 py-8 text-center">
-                    <div className="rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <AiFillRead className="h-16 w-full text-5xl pt-2 flex justify-center text-[#2A4C65] dark:text-white" />
-                      <h3 className="pt-2 font-bold py-1 dark:text-white">
-                        Consulting
-                      </h3>
-                      <p className="pt-1 py-2 dark:text-white">
-                        Tailoring bespoke solutions and strategies.
-                      </p>
+                    <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                      <div className="pt-5 px-5">
+                        <AiFillRead className="h-16 w-full text-5xl pt-2 flex justify-center text-[#2A4C65] dark:text-white" />
+                        <h3 className="pt-2 font-bold py-1 dark:text-white">
+                          Consulting
+                        </h3>
+                        <p className="pt-1 py-2 dark:text-white">
+                          Tailoring bespoke solutions and strategies.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -194,13 +199,15 @@ export default function Home() {
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
                     <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-[#2A4C65] dark:text-white" />
-                      <h3 className="pt-2 font-bold py-1 dark:text-white">
-                        Systems Design
-                      </h3>
-                      <p className="pt-1 py-2 dark:text-white">
-                        Designing robust systems from ideation to production
-                      </p>
+                      <div className="pt-5 px-5">
+                        <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-[#2A4C65] dark:text-white" />
+                        <h3 className="pt-2 font-bold py-1 dark:text-white">
+                          Systems Design
+                        </h3>
+                        <p className="pt-1 py-2 dark:text-white">
+                          Designing robust systems from ideation to production
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
