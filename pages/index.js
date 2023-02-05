@@ -14,6 +14,7 @@ import Projects from "../components/projects";
 import consultingImg from "../public/assets/skills/consulting.jpg";
 import systemsImg from "../public/assets/skills/systems_design.jpg";
 import codingImg from "../public/assets/skills/coding.jpg";
+import Footer from "../components/Footer";
 
 import {
   AiFillGithub,
@@ -115,7 +116,7 @@ export default function Home() {
             </section>
             <section>
               <div id="skillsExperience" className="text-center">
-                <div className="shadow-lg rounded-xl pb-10 shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
+                <div className="shadow-lg rounded-3xl pb-10 shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
                   <div className="px-10">
                     <Skills />
                   </div>
@@ -126,19 +127,19 @@ export default function Home() {
                   className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
-                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-3xl my-10
                   hover:shadow-[#75809C] bg-[#F2EEED]
                   dark:bg-[#37668a]"
                 >
-                  <div className="backface-hidden h-48 bg-white rounded-xl">
+                  <div className="backface-hidden h-48 bg-white rounded-3xl">
                     <Image
-                      className="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-3xl object-scale-down shadow-md shadow-[#75809C]"
                       src={codingImg}
                       alt="/"
                     />
                   </div>
-                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
+                    <div className="rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
                       <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
                       <h3 className="pt-2 font-bold py-1 dark:text-white">
                         Software Developement
@@ -153,19 +154,19 @@ export default function Home() {
                   className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
-                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-3xl my-10
                   hover:shadow-[#75809C] bg-[#F2EEED]
                   dark:bg-[#37668a]"
                 >
-                  <div className="h-48 backface-hidden bg-white rounded-xl">
+                  <div className="h-48 backface-hidden bg-white rounded-3xl">
                     <Image
-                      className="h-full w-full rounded-xl object-cover shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-3xl object-cover shadow-md shadow-[#75809C]"
                       src={consultingImg}
                       alt="/"
                     />
                   </div>
-                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-8 py-8 text-center">
+                    <div className="rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
                       <AiFillRead className="h-16 w-full text-5xl pt-2 flex justify-center text-[#2A4C65] dark:text-white" />
                       <h3 className="pt-2 font-bold py-1 dark:text-white">
                         Consulting
@@ -180,19 +181,19 @@ export default function Home() {
                   className="shadow-[#75809C] dark:shadow-[#E3E7EA]
                   relative preserve-3d hover:my-rotate-y-180 
                   transform transition-all duration-1000
-                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-xl my-10
+                  flex-1 justify-center items-center text-center shadow-lg p-5 rounded-3xl my-10
                   hover:shadow-[#75809C] bg-[#F2EEED]
                   dark:bg-[#37668a]"
                 >
-                  <div className="h-48 backface-hidden bg-white rounded-xl">
+                  <div className="h-48 backface-hidden bg-white rounded-3xl">
                     <Image
-                      className="h-full w-full rounded-xl object-scale-down shadow-md shadow-[#75809C]"
+                      className="h-full w-full rounded-3xl object-scale-down shadow-md shadow-[#75809C]"
                       src={systemsImg}
                       alt="/"
                     />
                   </div>
-                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-12 text-center">
-                    <div className="m-auto rounded-md ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
+                  <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
+                    <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
                       <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-[#2A4C65] dark:text-white" />
                       <h3 className="pt-2 font-bold py-1 dark:text-white">
                         Systems Design
@@ -206,7 +207,7 @@ export default function Home() {
               </div>
             </section>
             <section>
-              <div className="shadow-lg rounded-xl shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
+              <div className="shadow-lg rounded-3xl shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
                 <div className="flex flex-col gap-10 py-2 lg:flex-row lg:flex-wrap">
                   <Projects />
                 </div>
@@ -214,63 +215,7 @@ export default function Home() {
             </section>
             <ScrollToTop />
           </main>
-          <footer className="flex flex-col w-screen px-5 py-10 border-t z-5 bg-bg">
-            <div
-              className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-gray-500 dark:text-white
-              border-t flex flex-col items-center justify-center "
-            >
-              <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
-                Made with{" "}
-                <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
-                  <span>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                      width="26"
-                      title="React"
-                    />
-                    <span className="sr-only">React</span>
-                  </span>
-                  <span>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                      width="40"
-                      className="invert"
-                      title="NextJS"
-                    />
-                    <span className="sr-only">NextJS</span>
-                  </span>
-                  <span>
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                      width="26"
-                      title="TailwindCSS"
-                    />
-                    <span className="sr-only">TailwindCSS</span>
-                  </span>
-                </div>
-              </div>
-              <div className="mt-2 text-xs ">
-                Made by{" "}
-                <span className="text-fun-gray-light font-medium">
-                  Christopher Luu.
-                </span>{" "}
-                All rights reserved.
-              </div>
-            </div>
-            <div className="mt-8 text-center sm:text-right sm:-mt-12">
-              <a
-                className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
-                 border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
-                 dark:text-white"
-                href="https://github.com/christopher-luu97/Portfolio"
-                target="_blank"
-                rel="noopener nooreferrer"
-              >
-                <AiFillGithub className="cursor-pointer" />
-                <span className="ml-2">View Source Code </span>
-              </a>
-            </div>
-          </footer>
+          <Footer />
         </div>
       </div>
     </div>
