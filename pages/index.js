@@ -217,6 +217,15 @@ export default function Home() {
               <div className="shadow-lg rounded-3xl shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
                 <div className="flex flex-col gap-10 py-2 lg:flex-row lg:flex-wrap">
                   <Projects />
+                  <Link href="/projects">
+                    <div
+                      className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-center 
+                    text-xl rounded-full border-gray-500 text-gray-500
+                     hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white"
+                    >
+                      View All
+                    </div>
+                  </Link>
                 </div>
               </div>
             </section>

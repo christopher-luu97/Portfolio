@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import pepeImg from "../public/assets/projects/pepe.jpg";
+import meganImg from "../public/assets/projects/megan.PNG";
+
 import transriberImg from "../public/assets/projects/transcriber.PNG";
+import portfolioImg from "../public/assets/projects/portfolio.PNG";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -31,25 +34,25 @@ const Projects = () => {
             title="Transcriber App"
             backgroundImg={transriberImg} /** Edit image */
             projectUrl="/transcriber"
-            tech="Python and PyQT"
+            tech="Python, PyQT, SQL Server and AI"
           />
           <ProjectItem
-            title="Audio Classifier POC"
-            backgroundImg={pepeImg} /** Edit image */
-            projectUrl="/audio-classifier"
-            tech="Python and Streamlit"
+            title="Voice Recorded ChatGPT Interactor"
+            backgroundImg={meganImg} /** Edit image */
+            projectUrl="/m3gan"
+            tech="Python, PyQT and OpenAI"
           />
           <ProjectItem
             title="Personal Portfolio"
-            backgroundImg={pepeImg} /** Edit image */
+            backgroundImg={portfolioImg} /** Edit image */
             projectUrl="/"
             tech="NextJS and TailWindCSS"
           />
           <ProjectItem
-            title="Speech Analytics Dashboard"
+            title="TBA" /*"Speech Analytics Dashboard"*/
             backgroundImg={pepeImg} /** Edit image */
             projectUrl="/speech-analytics-dashboard"
-            tech="Python and Dash"
+            tech="TBA" /*"Python and Dash"*/
           />
         </div>
       </div>
