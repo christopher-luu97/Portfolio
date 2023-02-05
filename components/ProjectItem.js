@@ -6,7 +6,10 @@ import React from "react";
 
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
   return (
-    <div className=" relative flex items-center justify-center h-48 shadow-xl hover:shadow-cyan-700 shadow-cyan-800/40 rounded-xl group hover:bg-gradient-to-r from-indigo-500 to-sky-500">
+    <div
+      className=" relative flex items-center justify-center h-48 shadow-xl hover:shadow-[#75809C] shadow-[#75809C]
+    rounded-xl group hover:bg-gradient-to-b from-[#3E506C] to-[#72839A] hover:scale-105 duration-1000"
+    >
       <Image
         className="h-full w-full object-scale-down rounded-md group-hover:opacity-10 overflow:hidden"
         src={backgroundImg}
