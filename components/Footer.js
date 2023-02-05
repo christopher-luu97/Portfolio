@@ -45,19 +45,19 @@ function Footer() {
             </div>
           );
         })}
-      </div>
-      <div className="mt-8 text-center">
-        <a
-          className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
+        <div className="text-center">
+          <a
+            className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
                  border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
                  dark:text-white"
-          href="https://github.com/christopher-luu97/Portfolio"
-          target="_blank"
-          rel="noopener nooreferrer"
-        >
-          <AiFillGithub className="cursor-pointer text-lg" />
-          <span className="ml-2">View Source Code </span>
-        </a>
+            href="https://github.com/christopher-luu97/Portfolio"
+            target="_blank"
+            rel="noopener nooreferrer"
+          >
+            <AiFillGithub className="cursor-pointer text-lg" />
+            <span className="ml-2">View Source Code </span>
+          </a>
+        </div>
       </div>
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">
         <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
