@@ -31,31 +31,30 @@ export const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-2 right-2">
-      <>
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className={classNames(
-            isVisible ? "opacity-100" : "opacity-0",
-            "bg-blue-500 hover:bg-indigo-500 focus:ring-blue-500 inline-flex items-center rounded-full p-3 text-gray-500 dark:text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2"
-          )}
-        >
-          <BiArrowFromBottom
-            className="ScrollToTop"
-            style={{
-              height: 40,
-              width: 40,
-              padding: 7,
-              borderRadius: 50,
-              right: 50,
-              bottom: 50,
-              display: isVisible ? "flex" : "none",
-            }}
-            aria-hidden="true"
-          />
-        </button>
-      </>
+    <div className="fixed text-left mt-8 mb-5">
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className={classNames(
+          isVisible ? "opacity-100" : "opacity-0",
+          "inline-flex items-center rounded-full p-3 text-gray-500 dark:text-white"
+        )}
+      >
+        <BiArrowFromBottom
+          className="ScrollToTop"
+          style={{
+            height: 40,
+            width: 40,
+            padding: 7,
+            borderRadius: 50,
+            right: 50,
+            bottom: 50,
+            display: isVisible ? "flex" : "none",
+          }}
+          aria-hidden="true"
+        />
+        <span className="">Back to top</span>
+      </button>
     </div>
   );
 };

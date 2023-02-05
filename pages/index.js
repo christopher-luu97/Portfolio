@@ -220,8 +220,8 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <ScrollToTop />
           </main>
+          <ScrollToTop />
           <Footer />
         </div>
       </div>
