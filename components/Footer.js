@@ -1,19 +1,26 @@
 import Link from "next/link";
 import React from "react";
 import { footer } from "../data/global";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 function Footer() {
   return (
-    <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
+    <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg dark:text-white">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
         {footer.map((item, index) => {
           return (
-            <div key={index} className="text-left mb-5 sm:mb-0">
+            <div key={index} className="text-left mb-5 sm:mb-0 ">
+              <h4 className="uppercase text-fun-gray text-sm font-bold">
+                {item.title}
+              </h4>
               <div>
                 {item.links.map((item, index) => {
                   return (
-                    <div key={index} className="my-4">
+                    <div
+                      key={index}
+                      className="my-4 hover:underline text-gray-800 dark:text-white font-theme_bold py-1 pb-2
+                    rounded-md transition-all"
+                    >
                       {item.leavesWebsite ? (
                         <a
                           href={item.link}
@@ -21,7 +28,6 @@ function Footer() {
                           className="items-center flex"
                           rel="noopener noreferrer"
                         >
-                          {console.log(item.link)}
                           {item.icon && (
                             <span className="pr-2 -mb-1">
                               <img src={item.icon} width={20} height={20} />
@@ -40,7 +46,7 @@ function Footer() {
           );
         })}
       </div>
-      <div className="mt-8 text-center sm:text-right sm:-mt-12">
+      <div className="mt-8 text-center">
         <a
           className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
                  border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
@@ -49,7 +55,7 @@ function Footer() {
           target="_blank"
           rel="noopener nooreferrer"
         >
-          <AiFillGithub className="cursor-pointer" />
+          <AiFillGithub className="cursor-pointer text-lg" />
           <span className="ml-2">View Source Code </span>
         </a>
       </div>

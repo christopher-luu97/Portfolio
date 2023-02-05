@@ -19,7 +19,32 @@ export const routes = [
 
 export const footer = [
   {
-    title: "GitHub",
+    title: "Pages",
+    links: [
+      {
+        name: "Home",
+        link: "/",
+        leavesWebsite: false,
+      },
+      {
+        name: "Projects",
+        link: "/projects",
+        leavesWebsite: false,
+      },
+      {
+        name: "Resume",
+        link: "/resume",
+        leavesWebsite: false,
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+        leavesWebsite: false,
+      },
+    ],
+  },
+  {
+    title: "Socials",
     links: [
       {
         name: "GitHub",
@@ -27,11 +52,6 @@ export const footer = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         leavesWebsite: true,
       },
-    ],
-  },
-  {
-    title: "LinkedIn",
-    links: [
       {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/christopher-luu-542691149/",
