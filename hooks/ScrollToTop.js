@@ -31,7 +31,7 @@ export const ScrollToTop = () => {
   }, []);
 
   return (
-    <div className="fixed text-left mt-8 mb-5">
+    <div className="fixed bottom-2 right-2">
       <button
         type="button"
         onClick={scrollToTop}
@@ -40,19 +40,7 @@ export const ScrollToTop = () => {
           "inline-flex items-center rounded-full p-3 text-gray-500 dark:text-white"
         )}
       >
-        <BiArrowFromBottom
-          className="ScrollToTop"
-          style={{
-            height: 40,
-            width: 40,
-            padding: 7,
-            borderRadius: 50,
-            right: 50,
-            bottom: 50,
-            display: isVisible ? "flex" : "none",
-          }}
-          aria-hidden="true"
-        />
+        <BiArrowFromBottom className="h-6 w-6" aria-hidden="true" />
         <span className="">Back to top</span>
       </button>
     </div>

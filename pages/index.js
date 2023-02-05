@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
 import { ScrollToTop } from "../hooks/ScrollToTop";
 import Skills from "../components/skills";
@@ -15,6 +15,7 @@ import consultingImg from "../public/assets/skills/consulting.jpg";
 import systemsImg from "../public/assets/skills/systems_design.jpg";
 import codingImg from "../public/assets/skills/coding.jpg";
 import Footer from "../components/Footer";
+import Modal from "../components/modal";
 
 import {
   AiFillGithub,
@@ -28,6 +29,7 @@ import {
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="bg-[#DCDDDF] transition-colors duration-1000 dark:bg-[#2A4C65] ">
@@ -83,7 +85,7 @@ export default function Home() {
                     <AiFillLinkedin className="cursor-pointer" />
                   </a>
                 </div>
-                <div className="relative w-full pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
+                <div className="relative w-full m-auto flex justify-center text-center flex-col items-center z-1">
                   <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl dark:text-[#B3CAD8]">
                     Christopher Luu
                   </h2>
@@ -141,7 +143,7 @@ export default function Home() {
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
                     <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <div className="pt-5 px-5">
+                      <div className="px-5">
                         <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
                         <h3 className="pt-2 py-1 font-bold dark:text-white">
                           Software Developement
@@ -170,7 +172,7 @@ export default function Home() {
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-xl px-8 py-8 text-center">
                     <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <div className="pt-5 px-5">
+                      <div className="px-5">
                         <AiFillRead className="h-16 w-full text-5xl pt-2 flex justify-center text-[#2A4C65] dark:text-white" />
                         <h3 className="pt-2 font-bold py-1 dark:text-white">
                           Consulting
@@ -199,7 +201,7 @@ export default function Home() {
                   </div>
                   <div className="flex my-rotate-y-180 backface-hidden absolute inset-0 h-full w-full rounded-3xl px-8 py-8 text-center">
                     <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
-                      <div className="pt-5 px-5">
+                      <div className="px-5">
                         <AiFillLayout className="h-16 w-full text-5xl flex justify-center text-[#2A4C65] dark:text-white" />
                         <h3 className="pt-2 font-bold py-1 dark:text-white">
                           Systems Design
@@ -217,20 +219,39 @@ export default function Home() {
               <div className="shadow-lg rounded-3xl shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
                 <div className="flex flex-col gap-10 py-2 lg:flex-row lg:flex-wrap">
                   <Projects />
-                  <Link href="/projects">
-                    <div
-                      className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-center 
+                  <Link href="/projects"></Link>
+                </div>
+                <div className="relative w-full pb-5 m-auto flex justify-center text-center flex-col items-center z-1">
+                  <div
+                    className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 border-2 text-center 
                     text-xl rounded-full border-gray-500 text-gray-500
                      hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white"
-                    >
-                      View All
-                    </div>
-                  </Link>
+                  >
+                    View All
+                  </div>
                 </div>
               </div>
+              <ScrollToTop />
             </section>
+            <Fragment>
+              <div className="p-10 text-center">
+                <button
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none 
+              font-medium text-sm rounded-lg px-5 py-2.5 text-center mr-5
+              "
+                  onClick={() => setShowModal(true)}
+                >
+                  Form Modal
+                </button>
+                <Modal
+                  isVisible={showModal}
+                  onClose={() => setShowModal(false)}
+                >
+                  <h3>Modal Title</h3>
+                </Modal>
+              </div>
+            </Fragment>
           </main>
-          <ScrollToTop />
           <Footer />
         </div>
       </div>
