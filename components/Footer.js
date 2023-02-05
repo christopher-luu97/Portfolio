@@ -49,7 +49,7 @@ function Footer() {
           <a
             className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
                  border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
-                 dark:text-whiteborder-gray-500
+                 dark:text-white
                  hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white"
             href="https://github.com/christopher-luu97/Portfolio"
             target="_blank"

@@ -16,6 +16,9 @@ import systemsImg from "../public/assets/skills/systems_design.jpg";
 import codingImg from "../public/assets/skills/coding.jpg";
 import Footer from "../components/Footer";
 import Modal from "../components/modal";
+import ContactForm from "../components/contact/ContactForm";
+import ContactDetails from "../components/contact/ContactDetails";
+import { motion } from "framer-motion";
 
 import {
   AiFillGithub,
@@ -233,24 +236,32 @@ export default function Home() {
               </div>
               <ScrollToTop />
             </section>
-            <Fragment>
-              <div className="p-10 text-center">
-                <button
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none 
+            <div className="p-10 text-center">
+              <button
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none 
               font-medium text-sm rounded-lg px-5 py-2.5 text-center mr-5
               "
-                  onClick={() => setShowModal(true)}
+                onClick={() => setShowModal(true)}
+              >
+                Form Modal
+              </button>
+              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.5,
+                    delay: 0.1,
+                  }}
+                  className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5"
                 >
-                  Form Modal
-                </button>
-                <Modal
-                  isVisible={showModal}
-                  onClose={() => setShowModal(false)}
-                >
-                  <h3>Modal Title</h3>
-                </Modal>
-              </div>
-            </Fragment>
+                  <ContactForm />
+
+                  <ContactDetails />
+                </motion.div>{" "}
+              </Modal>
+            </div>
           </main>
           <Footer />
         </div>
