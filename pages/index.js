@@ -143,7 +143,7 @@ export default function Home() {
                     <div className="m-auto rounded-3xl ring-2 ring-[#75809C] shadow-md shadow-[#75809C] dark:ring-white dark:shadow-[#E3E7EA]">
                       <div className="pt-5 px-5">
                         <AiFillCode className="h-16 w-full pt-2 text-5xl text-[#2A4C65] dark:text-white " />
-                        <h3 className="pt-2 font-bold py-1 dark:text-white">
+                        <h3 className="pt-2 py-1 font-bold dark:text-white">
                           Software Developement
                         </h3>
                         <p className="pt-1 py-2 dark:text-white">
