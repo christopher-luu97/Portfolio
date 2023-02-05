@@ -9,22 +9,24 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16 text-center">
-        <span className="text-3xl flex items-center white-space:pre-wrap tracking-widest uppercase text-gray-800 dark:text-white">
-          {"PROJECTS".split("").map((letter, index) => {
-            return (
-              <span
-                key={index}
-                className="hover:text-sky-600 hover:-mt-2 
+      <div className="max-w-[1240px] mx-auto px-2 text-center">
+        <h3 className="font-bold pt-5">
+          <span className="text-3xl flex justify-center white-space:pre-wrap tracking-widest uppercase text-gray-800 dark:text-white">
+            {"PROJECTS".split("").map((letter, index) => {
+              return (
+                <span
+                  key={index}
+                  className="hover:text-sky-600 hover:-mt-2 
                             transition-all duration-500 hover:duration-300"
-              >
-                {letter}
-              </span>
-            );
-          })}
-        </span>
+                >
+                  {letter}
+                </span>
+              );
+            })}
+          </span>
+        </h3>
         <br />
-        <div className="grid md:grid-cols-2 gap-8 ">
+        <div className="grid md:grid-cols-2 gap-8 px-5 pb-5">
           <ProjectItem
             title="Transcriber App"
             backgroundImg={transriberImg} /** Edit image */

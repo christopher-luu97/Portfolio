@@ -117,10 +117,6 @@ export default function Home() {
               <div id="skillsExperience" className="text-center">
                 <div className="shadow-lg rounded-xl pb-10 shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
                   <div className="px-10">
-                    <h3 className="text-3xl font-bold pt-5 dark:text-white">
-                      Skills & Experience
-                    </h3>
-                    <br />
                     <Skills />
                   </div>
                 </div>
@@ -210,16 +206,18 @@ export default function Home() {
               </div>
             </section>
             <section>
-              <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                <Projects />
+              <div className="shadow-lg rounded-xl shadow-[#75809C] bg-[#F2EEED] dark:bg-[#37668a] dark:shadow-[#E3E7EA]">
+                <div className="flex flex-col gap-10 py-2 lg:flex-row lg:flex-wrap">
+                  <Projects />
+                </div>
               </div>
             </section>
             <ScrollToTop />
           </main>
           <footer className="flex flex-col w-screen px-5 py-10 border-t z-5 bg-bg">
             <div
-              className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-gray-500 border-t
-            flex flex-col items-center justify-center "
+              className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-gray-500 dark:text-white
+              border-t flex flex-col items-center justify-center "
             >
               <div className="inline-flex items-center uppercase text-xs font-bold tracking-widest">
                 Made with{" "}
@@ -261,7 +259,9 @@ export default function Home() {
             </div>
             <div className="mt-8 text-center sm:text-right sm:-mt-12">
               <a
-                className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50"
+                className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
+                 border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
+                 dark:text-white"
                 href="https://github.com/christopher-luu97/Portfolio"
                 target="_blank"
                 rel="noopener nooreferrer"
