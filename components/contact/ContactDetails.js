@@ -1,9 +1,9 @@
-import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
+import { FiLinkedin, FiMapPin, FiMail } from "react-icons/fi";
 
 const contacts = [
   {
     id: 1,
-    name: "Your Address, Your City, Your Country",
+    name: "Australia",
     icon: <FiMapPin />,
   },
   {
@@ -13,8 +13,8 @@ const contacts = [
   },
   {
     id: 3,
-    name: "555 8888 888",
-    icon: <FiPhone />,
+    name: "https://www.linkedin.com/in/christopher-luu-542691149/",
+    icon: <FiLinkedin />,
   },
 ];
 

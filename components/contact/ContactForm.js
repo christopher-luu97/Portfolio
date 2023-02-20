@@ -55,7 +55,7 @@ function ContactForm() {
               id="message"
               name="message"
               cols="14"
-              rows="6"
+              rows="3"
               aria-label="Message"
             ></textarea>
           </div>

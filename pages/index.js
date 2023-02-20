@@ -2,9 +2,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { ScrollToTop } from "../hooks/ScrollToTop";
 import Skills from "../components/skills";
@@ -15,10 +14,6 @@ import consultingImg from "../public/assets/skills/consulting.jpg";
 import systemsImg from "../public/assets/skills/systems_design.jpg";
 import codingImg from "../public/assets/skills/coding.jpg";
 import Footer from "../components/Footer";
-import Modal from "../components/modal";
-import ContactForm from "../components/contact/ContactForm";
-import ContactDetails from "../components/contact/ContactDetails";
-import { motion } from "framer-motion";
 
 import {
   AiFillGithub,
@@ -35,7 +30,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-[#DCDDDF] transition-colors duration-1000 dark:bg-[#2A4C65] ">
+      <div className="bg-[#DCDDDF] transition-colors duration-1000 dark:bg-[#2A4C65] z-0">
         <div
           className="w-full m-auto flex flex-col items-center justify-center min-h-screen"
           style={{ maxWidth: "1400px" }}
@@ -50,7 +45,7 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
           </Head>
           <main className="px-10 md:px-20 lg:px-40">
-            <section className="min-h-screen">
+            <section className="min-h-screen pb-10">
               <Navbar currentPage="Home" />
               <div className="flex flex-col items-center sm:justify-center sm:flex-row text-justify relative ">
                 <Image
@@ -230,38 +225,19 @@ export default function Home() {
                     text-xl rounded-full border-gray-500 text-gray-500
                      hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white"
                   >
-                    View All
+                    <a
+                      target="_blank"
+                      href="/projects"
+                      rel="noopener noreferrer"
+                    >
+                      View All
+                    </a>
                   </div>
                 </div>
               </div>
               <ScrollToTop />
             </section>
-            <div className="p-10 text-center">
-              <button
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none 
-              font-medium text-sm rounded-lg px-5 py-2.5 text-center mr-5
-              "
-                onClick={() => setShowModal(true)}
-              >
-                Form Modal
-              </button>
-              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    ease: "easeInOut",
-                    duration: 0.5,
-                    delay: 0.1,
-                  }}
-                  className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5"
-                >
-                  <ContactForm />
-
-                  <ContactDetails />
-                </motion.div>{" "}
-              </Modal>
-            </div>
+            <div className="pb-10"></div>
           </main>
           <Footer />
         </div>

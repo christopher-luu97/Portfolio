@@ -2,8 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { footer } from "../data/global";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useState } from "react";
+import Modal from "../components/modal";
+import ContactForm from "../components/contact/ContactForm";
+import ContactDetails from "../components/contact/ContactDetails";
+import { motion } from "framer-motion";
 
 function Footer() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg dark:text-white">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
@@ -58,6 +64,34 @@ function Footer() {
             <AiFillGithub className="cursor-pointer text-lg" />
             <span className="ml-2">View Source Code </span>
           </a>
+          {/* <div className="p-5 text-center">
+            <button
+              className="w-auto inline-flex items-center sm:w-auto font-bold flex-shrink text-xs border
+              border-gray-500 px-4 py-2 rounded-xl text-gray-500 cursor-pointer opacity-50
+              dark:text-white
+              hover:border-black hover:text-black dark:hover:text-white dark:hover:border-white
+              "
+              onClick={() => setShowModal(true)}
+            >
+              Contact
+            </button>
+            <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 0.5,
+                  delay: 0.1,
+                }}
+                className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5"
+              >
+                <ContactForm />
+
+                <ContactDetails />
+              </motion.div>{" "}
+            </Modal>
+          </div> */}
         </div>
       </div>
       <div className="max-w-4xl w-full m-auto mt-8 pt-8 sm:mt-4 sm:pt-4 text-center text-fun-gray border-t border-fun-pink-dark">

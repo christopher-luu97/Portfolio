@@ -11,10 +11,6 @@ export const routes = [
     title: "Resume",
     path: "/resume",
   },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
 ];
 
 export const footer = [
