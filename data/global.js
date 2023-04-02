@@ -32,11 +32,6 @@ export const footer = [
         link: "/resume",
         leavesWebsite: false,
       },
-      {
-        name: "Contact",
-        link: "/contact",
-        leavesWebsite: false,
-      },
     ],
   },
   {

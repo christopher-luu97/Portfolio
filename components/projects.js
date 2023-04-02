@@ -1,11 +1,7 @@
 /** https://github.com/fireclint/portfolio-nextjs/blob/main/components/Projects.jsx */
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import pepeImg from "../public/assets/projects/pepe.jpg";
 import meganImg from "../public/assets/projects/megan.PNG";
 
-import transriberImg from "../public/assets/projects/transcriber.PNG";
 import portfolioImg from "../public/assets/projects/portfolio.PNG";
 import ProjectItem from "./ProjectItem";
 
@@ -31,15 +27,9 @@ const Projects = () => {
         <br />
         <div className="grid md:grid-cols-2 gap-8 px-5 pb-5">
           <ProjectItem
-            title="Transcriber App"
-            backgroundImg={transriberImg} /** Edit image */
-            projectUrl="/transcriber"
-            tech="Python, PyQT, SQL Server and AI"
-          />
-          <ProjectItem
             title="Voice Recorded ChatGPT Interactor"
             backgroundImg={meganImg} /** Edit image */
-            projectUrl="/m3gan"
+            projectUrl="/projects/m3gan"
             tech="Python, PyQT and OpenAI"
           />
           <ProjectItem
@@ -47,12 +37,6 @@ const Projects = () => {
             backgroundImg={portfolioImg} /** Edit image */
             projectUrl="/"
             tech="NextJS and TailWindCSS"
-          />
-          <ProjectItem
-            title="TBA" /*"Speech Analytics Dashboard"*/
-            backgroundImg={pepeImg} /** Edit image */
-            projectUrl="/speech-analytics-dashboard"
-            tech="TBA" /*"Python and Dash"*/
           />
         </div>
       </div>
