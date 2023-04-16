@@ -18,3 +18,10 @@ TO ADD
   - Speech Transcription Dashboard
   - "M3gan": AI Chatbot using Transcription, ChatGPT and TTS
   - Portfolio
+
+Stack
+
+- TailwindCSS
+- React
+- JS
+- nextJS
